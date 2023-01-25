@@ -9,6 +9,7 @@ import Heading from "./components/Heading";
 import StarProduct from "./components/StarProduct";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu";
 import HotAccessories from "./components/HotAccessories.js";
+import ProductReviews from "./components/ProductReviews"
 function App() {
   return (
     <Router>
@@ -82,6 +83,8 @@ function App() {
           }
         />
       </Routes>
+      <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews productreviews={banner.productReviews}/>
     </Router>
   );
 }
