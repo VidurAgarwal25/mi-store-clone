@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-import { Link } from "react-router-dom";
+
 import logo from "../images/milogo.png";
 const Navbar = () => {
   const searchIcon = (
@@ -18,38 +18,38 @@ const Navbar = () => {
   return (
     <div className="nav">
       <div className="logo">
-        <Link to="/">
+        <a href="/">
           <img
             src={logo}
             alt="Not Loaded"
             style={{ height: "50px", width: "50px", borderRadius: "20px" }}
           />
-        </Link>
+        </a>
       </div>
-      <Link className="navlinks" to="/miphones">
+      <a className="navlinks" href="/miphones">
         Mi Phones
-      </Link>
-      <Link className="navlinks" to="/redmiphones">
+      </a>
+      <a className="navlinks" href="/redmiphones">
         Redmi Phones
-      </Link>
-      <Link className="navlinks" to="/tv">
+      </a>
+      <a className="navlinks" href="/tv">
         TV
-      </Link>
-      <Link className="navlinks" to="/laptops">
+      </a>
+      <a className="navlinks" href="/laptops">
         Laptops
-      </Link>
-      <Link className="navlinks" to="/lifestyle">
+      </a>
+      <a className="navlinks" href="/lifestyle">
         Fitness & Lifestyle
-      </Link>
-      <Link className="navlinks" to="/home">
+      </a>
+      <a className="navlinks" href="/home">
         Home
-      </Link>
-      <Link className="navlinks" to="/audio">
+      </a>
+      <a className="navlinks" href="/audio">
         Radio
-      </Link>
-      <Link className="navlinks" to="/accessories">
+      </a>
+      <a className="navlinks" href="/accessories">
         Accessories
-      </Link>
+      </a>
       <div className="searchbox">
         <input type="text" name="search" placeholder="Search Products" />
         {searchIcon}

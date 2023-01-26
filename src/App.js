@@ -10,12 +10,17 @@ import StarProduct from "./components/StarProduct";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu";
 import HotAccessories from "./components/HotAccessories.js";
 import ProductReviews from "./components/ProductReviews";
-import Videos from "./components/Videos.js"
+import Videos from "./components/Videos.js";
+import Banner from "./components/Banner.js";
+import Footer from "./components/Footer.js";
+import NavOptions from "./components/NavOptions.js"
 function App() {
   return (
     <Router>
       <PreNavbar />
       <Navbar />
+        <NavOptions miphones={banner.miPhones} redmiphones={banner.redmiPhones} tv={banner.tv} laptop={banner.laptop}
+        fitnessandlifestyle={banner.fitnessAndLifeStyle} home={banner.home} audio={banner.audio} accessories={banner.accessories}/>
       <Slider start={banner.banner.start} />
       <Offer offer={banner.offer} />
       <Heading text="STAR PRODUCTS" />
@@ -87,7 +92,10 @@ function App() {
       <Heading text="PRODUCT REVIEWS" />
       <ProductReviews productreviews={banner.productReviews} />
       <Heading text="Videos" />
-      <Videos videos={banner.videos}/>
+      <Videos videos={banner.videos} />
+      <Heading text="IN THE PRESS" />
+      <Banner bannerend={banner.banner.end} />
+      <Footer footer={banner.footer} />
     </Router>
   );
 }
